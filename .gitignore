@@ -1,0 +1,13 @@
+# Logs and databases #
+######################
+*.log
+*.sqlite
+node_modules
+
+# OS generated files #
+######################
+._*
+.Trashes
+ehthumbs.db
+Thumbs.db
+.DS_Store
