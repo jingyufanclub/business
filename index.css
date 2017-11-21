@@ -16,15 +16,32 @@ body {
 
 main {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   width: 95vw;
   height: 95vh;
   margin: auto;
-  overflow: hidden;
 }
 
 .business {
   font-size: 16vw;
-  text-align: center;
+}
+
+@supports (display:grid) {
+
+  main {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "business";
+  }
+
+  .business {
+    grid-area: business;
+  }
+
 }
