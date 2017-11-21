@@ -6,9 +6,7 @@ class Business extends React.Component {
     }
   }
 
-  onChange = () => {
-    this.setState({business: 'Enterprise'})
-  }
+  onChange = () => this.setState({business: 'Enterprise'})
 
   render() {
     return (
