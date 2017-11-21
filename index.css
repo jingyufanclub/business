@@ -26,6 +26,7 @@ main {
 
 .business {
   font-size: 16vw;
+  cursor: pointer;
 }
 
 @supports (display:grid) {

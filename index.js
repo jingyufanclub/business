@@ -6,10 +6,14 @@ class Business extends React.Component {
     }
   }
 
+  onChange = () => {
+    this.setState({business: 'Enterprise'})
+  }
+
   render() {
     return (
       <main>
-        <div className="business">
+        <div className="business" onClick={() => this.onChange()}>
           {this.state.business}
         </div>
       </main>
