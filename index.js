@@ -1,27 +1,27 @@
-const nyms = ['Industry', 'Commerce', 'Enterprise', 'Business'];
+const argot = ['Industry', 'Commerce', 'Enterprise', 'Business'];
 
 class Business extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      business: 'Business'
+      noun: 'Business'
     }
   }
 
-  getNym() {
-    let nym = nyms.shift();
-    nyms.push(nym);
+  getSynonym() {
+    let nym = argot.shift();
+    argot.push(nym);
     return nym;
   }
 
-  onChange = () => this.setState({business: this.getNym()})
+  onChange = () => this.setState({noun: this.getSynonym()})
 
   render() {
     return (
       <main>
-        <div className="business" onClick={() => this.onChange()}>
-          {this.state.business}
-        </div>
+        <section className="business" onClick={() => this.onChange()}>
+          {this.state.noun}
+        </section>
       </main>
     )
   }
