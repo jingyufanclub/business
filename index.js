@@ -1,3 +1,5 @@
+const nyms = ['Industry', 'Commerce', 'Enterprise', 'Business'];
+
 class Business extends React.Component {
   constructor(props) {
     super(props);
@@ -6,7 +8,13 @@ class Business extends React.Component {
     }
   }
 
-  onChange = () => this.setState({business: 'Enterprise'})
+  getNym() {
+    let nym = nyms.shift();
+    nyms.push(nym);
+    return nym;
+  }
+
+  onChange = () => this.setState({business: this.getNym()})
 
   render() {
     return (
