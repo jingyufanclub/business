@@ -1,3 +1,3 @@
 # Taking Care of Business
 
-<http://jingyufanclub.co/business/>
+<http://jingyufan.club/business/>
