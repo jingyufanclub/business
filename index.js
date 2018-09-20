@@ -14,12 +14,12 @@ class Business extends React.Component {
     return nym;
   }
 
-  onChange = () => this.setState({noun: this.getSynonym()})
+  handleClick = () => this.setState({noun: this.getSynonym()})
 
   render() {
     return (
       <main>
-        <section className="business" onClick={() => this.onChange()}>
+        <section className="business" onClick={this.handleClick}>
           {this.state.noun}
         </section>
       </main>
