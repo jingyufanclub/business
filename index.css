@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+@font-face {
+  font-family: "Goldman Sans";
+  src: url('GoldmanSans_W_Md.woff2')
+}
 
 html {
   box-sizing: border-box;
@@ -11,7 +14,7 @@ html {
 }
 
 body {
-  font-family: 'Libre Baskerville', Helvetica, sans-serif;
+  font-family: 'Goldman Sans', Helvetica, sans-serif;
 }
 
 main {
